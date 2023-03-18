@@ -9,14 +9,3 @@
  
  Name: @PKG_CONFIG_NAME@
  Description: @PKG_CONFIG_DESCRIPTION@
---- librdkafka-1.4.0/CMakeLists.txt~	2020-04-02 17:46:23.000000000 +0200
-+++ librdkafka-1.4.0/CMakeLists.txt	2020-05-04 09:28:10.039858019 +0200
-@@ -216,7 +216,7 @@
- 
- include(GNUInstallDirs)
- 
--set(config_install_dir "lib/cmake/${PROJECT_NAME}")
-+set(config_install_dir "lib${LIB_SUFFIX}/cmake/${PROJECT_NAME}")
- 
- set(generated_dir "${CMAKE_CURRENT_BINARY_DIR}/generated")
- 
