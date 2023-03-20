@@ -2,7 +2,7 @@ Summary:	Apache Kafka C library
 Summary(pl.UTF-8):	Biblioteka C do protokołu Apache Kafka
 Name:		librdkafka
 Version:	2.0.2
-Release:	1
+Release:	2
 License:	BSD
 Group:		Libraries
 #Source0Download: https://github.com/edenhill/librdkafka/releases
