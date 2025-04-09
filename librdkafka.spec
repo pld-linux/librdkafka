@@ -1,16 +1,16 @@
 Summary:	Apache Kafka C library
 Summary(pl.UTF-8):	Biblioteka C do protokołu Apache Kafka
 Name:		librdkafka
-Version:	2.4.0
+Version:	2.8.0
 Release:	1
 License:	BSD
 Group:		Libraries
 #Source0Download: https://github.com/edenhill/librdkafka/releases
 Source0:	https://github.com/edenhill/librdkafka/archive/v%{version}/%{name}-%{version}.tar.gz
-# Source0-md5:	60a275ced5c23308e16347c0a3b941f0
+# Source0-md5:	ab7f14e916cbefa7f0e7d1fb06e08bfd
 Patch0:		%{name}-pc.patch
 URL:		https://github.com/edenhill/librdkafka
-BuildRequires:	cmake >= 3.2
+BuildRequires:	cmake >= 3.5
 BuildRequires:	curl-devel
 BuildRequires:	cyrus-sasl-devel >= 2.1.26
 BuildRequires:	libstdc++-devel
@@ -114,7 +114,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc INTRODUCTION.md LICENSES.txt README.md
+%doc CHANGELOG.md CONFIGURATION.md INTRODUCTION.md LICENSE LICENSE.{cjson,crc32c,fnv1a,hdrhistogram,murmur2,nanopb,opentelemetry,pycrc,queue,regexp,tinycthread} LICENSES.txt README.md STATISTICS.md
 %attr(755,root,root) %{_libdir}/librdkafka.so.1
 
 %files devel
